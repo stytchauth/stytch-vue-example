@@ -17,17 +17,12 @@ const styles = {
 
 const REDIRECT_URL = 'http://localhost:3000/authenticate'
 const config = {
-  products: [Products.emailMagicLinks, Products.oauth],
+  products: [Products.emailMagicLinks],
   emailMagicLinksOptions: {
     loginRedirectURL: REDIRECT_URL,
     loginExpirationMinutes: 60,
     signupRedirectURL: REDIRECT_URL,
     signupExpirationMinutes: 60
-  },
-  oauthOptions: {
-    providers: [{ type: 'google' }],
-    loginRedirectURL: REDIRECT_URL,
-    signupRedirectURL: REDIRECT_URL
   }
 }
 
