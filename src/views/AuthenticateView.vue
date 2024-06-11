@@ -17,16 +17,6 @@ if (token && tokenType) {
         console.error(err)
         alert('Email Magic Link authentication failed. See console for details.')
       })
-  } else if (tokenType === 'oauth') {
-    stytch.oauth
-      .authenticate(token, {
-        session_duration_minutes: 60
-      })
-      .then(() => console.log('Successful authentication: OAuth'))
-      .catch((err) => {
-        console.error(err)
-        alert('OAuth authentication failed. See console for details.')
-      })
   }
 } else {
   // If query params are not found, announce that something went wrong.
