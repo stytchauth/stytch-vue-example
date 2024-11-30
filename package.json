@@ -10,7 +10,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@stytch/vanilla-js": "^0.10.2",
+    "@stytch/vanilla-js": "^0.10.3",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
